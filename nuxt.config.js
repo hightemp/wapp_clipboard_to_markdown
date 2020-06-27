@@ -1,13 +1,13 @@
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/wapp_clipboard_to_markdown/dist/'
+    // base: '/wapp_clipboard_to_markdown/dist/'
   }
 } : {};
 
 export default {
   ...routerBase,
-  
+
   mode: 'spa',
   /*
   ** Headers of the page
@@ -56,6 +56,13 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      // const HtmlWebpackPlugin = require('html-webpack-plugin')
+      // const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
+
+      // config.plugins.push(new HtmlWebpackPlugin({
+		  //   inlineSource: '.(js|css)$' // embed all javascript and css inline
+	    // }));
+      // config.plugins.push(new HtmlWebpackInlineSourcePlugin());
     }
   }
 }

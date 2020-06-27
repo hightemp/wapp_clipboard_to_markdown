@@ -6,23 +6,27 @@
   "private": true,
   "scripts": {
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build && nuxt export",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build && nuxt export && yarn inline_pack",
+    "inline_pack": "inline-script-tags $PWD/dist/index.html . && inline-stylesheets $PWD/dist/index.html . && inline-images $PWD/dist/index.html .",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist"
+    "deploy": "DEPLOY_ENV=GH_PAGES push-dir --dir=dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
     "@nuxtjs/pwa": "^3.0.0-0",
     "codemirror": "^5.55.0",
+    "inline-scripts": "^1.7.0",
     "marked": "^1.1.0",
     "nuxt": "^2.0.0",
     "turndown-plugin-gfm": "^1.0.2",
     "vue-monaco": "^1.2.1"
   },
   "devDependencies": {
+    "html-webpack-inline-source-plugin": "^0.0.10",
+    "html-webpack-plugin": "^4.3.0",
     "push-dir": "^0.4.1"
   }
 }
