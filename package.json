@@ -11,7 +11,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
