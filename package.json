@@ -1,0 +1,25 @@
+{
+  "name": "wapp_clipboard_to_markdown",
+  "version": "1.0.0",
+  "description": "wapp_clipboard_to_markdown",
+  "author": "Panov Anton",
+  "private": true,
+  "scripts": {
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build && nuxt export",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "codemirror": "^5.55.0",
+    "marked": "^1.1.0",
+    "nuxt": "^2.0.0",
+    "turndown-plugin-gfm": "^1.0.2",
+    "vue-monaco": "^1.2.1"
+  },
+  "devDependencies": {}
+}
