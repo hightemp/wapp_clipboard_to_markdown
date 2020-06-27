@@ -2,7 +2,7 @@
 
 ## Demo 
 
-[demo link]()
+[demo link](./dist/)
 
 ## Build Setup
 
