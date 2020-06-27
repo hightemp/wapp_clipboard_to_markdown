@@ -1,7 +1,7 @@
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    // base: '/wapp_clipboard_to_markdown/dist/'
+    base: '/wapp_clipboard_to_markdown/dist/'
   }
 } : {};
 
