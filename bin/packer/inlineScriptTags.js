@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 let inlineHtmlScripts = (htmlPath, sBasePath) => {
-	const scriptTagRegex = /<script src="([\w.\-\/]+)"><\/script>/;
+	const scriptTagRegex = /<script[^>]*src="([\w.\-\/]+)"[^>]*>[^<]*<\/script>/;
 	let html = fs.readFileSync(htmlPath).toString();
 	console.log('>>>', htmlPath, sBasePath);
 	let scriptPromises = (html.match(new RegExp(scriptTagRegex, 'g')) || [])
