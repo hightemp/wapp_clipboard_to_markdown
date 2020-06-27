@@ -11,7 +11,8 @@ var sBase = oNuxtConf.router.base;
 const aFunctions = [
   require('./inlineScriptTags'),
   require('./inlineStylesheets'),
-  require('./inlineImages')
+  require('./inlineImages'),
+  require('./removePreloader')
 ];
 
 const path = require('path');
