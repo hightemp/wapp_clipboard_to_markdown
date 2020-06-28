@@ -13,9 +13,10 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "git_push_self": "git add . && git commit -am 'update' && git push origin master",
     "deploy_pages": "yarn generate:gh-pages && yarn rsync && yarn git_push",
     "rsync": "rsync -rlpcgoDvzi --delete ./dist/ ../wapp_clipboard_to_markdown_demo/",
-    "git_push": "cd ../wapp_clipboard_to_markdown_demo/ ;git add . ; git commit -am 'update'; git push -u origin master; cd -",
+    "git_push": "cd ../wapp_clipboard_to_markdown_demo/; hub init; hub create; git add . ; git commit -am 'update'; git push --force -u origin master; cd -",
     "deploy": "DEPLOY_ENV=GH_PAGES push-dir --dir=../wapp_clipboard_to_markdown_demo"
   },
   "bin": {

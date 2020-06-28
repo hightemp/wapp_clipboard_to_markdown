@@ -2,7 +2,7 @@
 
 ## Demo 
 
-[https://hightemp.github.io/wapp_clipboard_to_markdown/dist/](https://hightemp.github.io/wapp_clipboard_to_markdown/dist/)
+[https://hightemp.github.io/wapp_clipboard_to_markdown_demo/](https://hightemp.github.io/wapp_clipboard_to_markdown_demo/)
 
 ## Build Setup
 

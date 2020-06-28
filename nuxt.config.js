@@ -1,7 +1,7 @@
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    // base: '/wapp_clipboard_to_markdown/dist/'
+    base: '/wapp_clipboard_to_markdown_demo/'
   }
 } : {};
 
@@ -20,7 +20,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/icon.png' }
     ]
   },
   /*
