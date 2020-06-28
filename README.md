@@ -4,6 +4,10 @@
 
 [https://hightemp.github.io/wapp_clipboard_to_markdown_demo/](https://hightemp.github.io/wapp_clipboard_to_markdown_demo/)
 
+## Screeshots
+
+![](screenshots/Screenshot at 11-34-22.png)
+
 ## Build Setup
 
 ```bash
