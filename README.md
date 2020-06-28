@@ -6,7 +6,7 @@
 
 ## Screeshots
 
-![](/screenshots/Screenshot at 11-34-22.png)
+![](/screenshots/screenshot01.png)
 
 ## Build Setup
 
